@@ -18,7 +18,11 @@ export const RegisterDevice = async (req, res) => {
 // Get Devices by type or status
 export const getDevices = async (req, res) => {
   try {
-    const devices = await DeviceService.getDevices(req.body);
+  
+    const { type, status } = req.query || {};
+
+    const devices = await DeviceService.getDevices({ type, status });
+
     res.status(200).json({
       message: "Devices Fetched Successfully",
       success: true,
@@ -29,7 +33,6 @@ export const getDevices = async (req, res) => {
     res.status(500).json({ message: "Internal Server Error", success: false });
   }
 };
-
 // Update Device
 export const UpdateDevice = async (req, res) => {
   try {

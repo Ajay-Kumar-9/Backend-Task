@@ -16,6 +16,8 @@ Make sure you have the following installed:
 
 ---
 
+- [API Documentation](https://docs.google.com/document/d/1L8r-BKOUrIOpPQ8V11M_QADM0KLXDEsXUmWlqmnnd1E/edit?usp=sharing)  
+
 ## ⚙️ Manual Setup
 
 Follow these steps to get the server up and running manually:
